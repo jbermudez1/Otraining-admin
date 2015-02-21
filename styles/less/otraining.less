@@ -9,6 +9,13 @@
 @textColor: #91a7b2;
 @margenMenuSuperior:5em;
 @x:red;
+
+.link(@color:blue){
+	text-decoration: none;
+	color: @color;
+	/*font-size: @tamano;*/
+}
+
 .fuente {	
 	font-family: 'Lato', sans-serif;
 }
@@ -28,6 +35,28 @@ html,body{
 	height:@margenMenuSuperior;
 	position: absolute;
 	width: 100%;
+	&>div{
+		background-color: red;
+		float: left;
+	}
+	.logo{
+		width: 20%;
+	}
+	.navegacion{
+		width: 80%;
+		text-align: right;
+		ul{
+
+		}
+		li{
+			display: inline;
+			list-style: none;
+			a{
+			 .link(yellow);
+			}
+		}
+	}
+
 	
 }
 .leftpanel {
@@ -72,8 +101,17 @@ html,body{
 	}
 }
 .containerArea {
+		width: 100%;
 		padding-top:@margenMenuSuperior;
 		float: left;
+		.contenido{
+			padding: 2em;
+			div{
+				width: 50%;
+				float: left;
+				background-color: red;
+			}
+		}
 
 }
 .titulos1 {
