@@ -3,16 +3,19 @@
   <head>
        <title>Admin - Otraining</title>
        <meta charset="UTF-8" />
-              <link rel="stylesheet" type="text/css" href="lib/normalize.css">
+             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 
-       <link rel="stylesheet" type="text/css" href="styles/css/otraining.css">
+      <link rel="stylesheet" type="text/css" href="lib/normalize.css">
+      <link rel="stylesheet" type="text/css" href="styles/css/otraining.css">
+      <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   </head>
 
   <body>
      <nav class="menu">
-      <div class="logo">
-      a
-      </div>
+       <div class="logo">
+         <img class="img-responsive" src="img/logo.png">
+       </div>
       <div class="navegacion">
         <ul>
           <li><a href="#">Inicio</a></li>
@@ -21,17 +24,22 @@
           <li><a href="#">Líder</a></li>
           <li><a href="#">Participante</a></li>
         </ul>
+        <ul class="user">
+            <li><i class="fa fa-user"></i></li>
+            <li>Aarón</li>
+        </ul>
       </div>
      </nav>
       <article class="leftpanel">
           <div class="menulateral">
+            <br><br>
               <p class="titulos1">Actividades</p>
               <ul class="actividades">
-                <li><a href="#">Cursos Pendientes</a><span>10</span></li>
-                <li><a href="#">Cursos Pendientes</a></li>
-                <li><a href="#">Cursos Pendientes</a></li>
-                <li><a href="#">Cursos Pendientes</a></li>
-                <li><a href="#">Cursos Pendientes</a></li>
+                <li><a href="#"><i class="fa fa-angle-right"></i>Cursos Pendientes</a><span>10</span></li>
+                <li><a href="#"><i class="fa fa-angle-right"></i>Cursos Pendientes</a></li>
+                <li><a href="#"><i class="fa fa-angle-right"></i>Cursos Pendientes</a></li>
+                <li><a href="#"><i class="fa fa-angle-right"></i>Cursos Pendientes</a></li>
+                <li><a href="#"><i class="fa fa-angle-right"></i>Cursos Pendientes</a></li>
               </ul>
           </div>
       </article>
@@ -41,11 +49,52 @@
         <div class="contenido">
         <!-- AQUI VA TODO EL CONTENIDO -->
            <div>
-            a
+            <span class="titulos1">¡Bienvenido Aarón! Asi van tus actividades</span><br><br>
+                <div class="row">
+                  
+                  <div class="col-xs-3">
+                      <canvas id="chart-area" width="" height=""></canvas>
+                  </div>
+                  <div class="col-xs-9">
+                      <p class="titulos2"><span>2</span> Cursos en progreso</p>
+                      <p class="colora">Diagnostíco de Ingles</p>
+                      <p>Iniciaste: <span>10/10/2014</span> Termina:<span>10/10/2014</span> </p>
+                      <p class="boton">Retomar</p>
+                      <hr>
+                      <p class="colora">Diagnostíco de Ingles</p>
+                      <p>Iniciaste: <span>10/10/2014</span> Termina:<span>10/10/2014</span> </p>
+                      <p class="boton">Retomar</p>
+                  </div>
+
+                </div>
            </div>
            <div>
-            b
-           </div>
+                  <div class="row boxCont">
+                      <div class="col-xs-6">
+                          <div class="box1">9.9<br>
+                              <span>Calificación</span>
+                          </div>
+                      </div>
+                      <div class="col-xs-6">
+                          <div class="box2">3<br>
+                              <span>Cursos Tomados</span>
+                          </div>                  
+                      </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                          <div class="col-xs-6">
+                              <div class="box3"><br>
+                                  <span></span>
+                              </div>
+                          </div>
+                          <div class="col-xs-6">
+                              <div class="box2">12 / 9<br>
+                                  <span>Dias / Hrs</span>
+                              </div>
+                          </div>
+                   </div>
+          </div>
         <!-- AQUI VA TODO EL CONTENIDO -->
         </div>
         
@@ -77,6 +126,33 @@
        </section>
        <footer>
        </footer> -->
+              <script src="lib/chart/Chart.js"></script>
+
+       <script type="text/javascript">
+
+    var doughnutData = [
+        
+        {
+          value: 10,
+          color: "#FAFAFA",
+          highlight: "#FAFAFA",
+          // label: "Grey"
+        },
+        {
+          value: 50,
+          color: "#1fbba6",
+          highlight: "#616774",
+          label: "Dark Grey"
+        }
+
+      ];
+
+      window.onload = function(){
+        var ctx = document.getElementById("chart-area").getContext("2d");
+        window.myDoughnut = new Chart(ctx).Doughnut(doughnutData, {responsive : true,  segmentShowStroke : false,
+});
+      };
+       </script>
   </body>
 </html>
 

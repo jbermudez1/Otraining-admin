@@ -1,1 +1,166 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:400,300,100);.fuente{font-family:Lato,sans-serif}body,html{height:100%;font-family:Lato,sans-serif}.contenidos{height:100%;min-height:100%;background:#fafafa;overflow:auto}.menu{background-color:#03a9f4;height:5em;position:absolute;width:100%}.menu>div{background-color:red;float:left}.menu .logo{width:20%}.menu .navegacion{width:80%;text-align:right}.menu .navegacion li{display:inline;list-style:none}.menu .navegacion li a{text-decoration:none;color:#ff0}.leftpanel{background-color:#eee;width:20%;float:left;height:100%}.leftpanel .menulateral{padding-top:5em;padding-left:2em}.leftpanel .menulateral .actividades{list-style:none;padding-left:0}.leftpanel .menulateral .actividades li{padding-top:.5em;padding-bottom:.5em}.leftpanel .menulateral .actividades li a{text-decoration:none;color:#91a7b2}.leftpanel .menulateral .actividades li:before{content:">";margin-right:1em}.leftpanel .menulateral .actividades li:hover{background-color:red}.leftpanel .menulateral .actividades li span{float:right;margin-right:2em;background-color:#00f;border-radius:60em;padding:.3em;color:#fff;font-size:.8em}.containerArea{width:100%;padding-top:5em;float:left}.containerArea .contenido{padding:2em}.containerArea .contenido div{width:50%;float:left;background-color:red}.titulos1{font-size:2em;font-weight:100}
+@import url('http://fonts.googleapis.com/css?family=Lato:400,300,100');
+hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.colora {
+  color: #03a9f4;
+}
+.fuente {
+  font-family: 'Lato', sans-serif;
+}
+html,
+body {
+  height: 100%;
+  font-family: 'Lato', sans-serif;
+}
+.contenidos {
+  height: 100%;
+  min-height: 100%;
+  background: #fafafa;
+  overflow: auto;
+}
+.menu {
+  background-color: #03a9f4;
+  height: 5em;
+  position: absolute;
+  width: 100%;
+}
+.menu > div {
+  padding: 1em;
+  float: left;
+}
+.menu .logo {
+  width: 15%;
+  padding: 0.5em;
+}
+.menu .navegacion {
+  width: 80%;
+  text-align: right;
+}
+.menu .navegacion ul {
+  padding-top: 1em;
+  display: inline-block;
+}
+.menu .navegacion li {
+  display: inline;
+  list-style: none;
+  margin-left: 1em;
+}
+.menu .navegacion li a {
+  text-decoration: none;
+  color: #ffffff;
+  /*font-size: @tamano;*/
+
+}
+.leftpanel {
+  background-color: #eeeeee;
+  width: 20%;
+  float: left;
+  height: 100%;
+}
+.leftpanel .menulateral {
+  padding-top: 5em;
+  padding-left: 1.2em;
+}
+.leftpanel .menulateral .actividades {
+  list-style: none;
+  padding-left: 0;
+}
+.leftpanel .menulateral .actividades li {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+.leftpanel .menulateral .actividades li a {
+  text-decoration: none;
+  color: #91a7b2;
+}
+.leftpanel .menulateral .actividades li i {
+  margin-right: 1em;
+}
+.leftpanel .menulateral .actividades li:hover {
+  background-color: #03a9f4;
+}
+.leftpanel .menulateral .actividades li:hover a {
+  color: #ffffff;
+}
+.leftpanel .menulateral .actividades li span {
+  float: right;
+  margin-right: 2em;
+  background-color: #0000ff;
+  border-radius: 60em;
+  padding: 0.3em;
+  color: white;
+  font-size: 0.8em;
+}
+.containerArea {
+  width: 100%;
+  padding-top: 5em;
+  float: left;
+  color: gray;
+}
+.containerArea p {
+  line-height: 0.8em;
+}
+.containerArea .contenido {
+  padding: 2em;
+  overflow: hidden;
+}
+.containerArea .contenido > div {
+  width: 50%;
+  float: left;
+}
+.titulos1 {
+  font-size: 2em;
+  font-weight: 100;
+}
+.titulos2 {
+  font-size: 1.5em;
+  font-weight: 300;
+  color: #808080;
+}
+.chart {
+  width: 200px !important;
+  display: block;
+  height: 200px;
+  border-radius: 50%;
+  background-color: purple;
+}
+.chart:after {
+  content: "";
+  padding: 2em;
+  border-radius: 50%;
+  background-color: orange;
+  position: absolute;
+}
+.boton {
+  padding: 0.9em;
+  border: solid 1px #03a9f4;
+  display: inline-block;
+}
+.box1 {
+  background-color: #03a9f4;
+  text-align: center;
+  font-size: 3em;
+  padding: 0.6em;
+  color: #ffffff;
+  line-height: 0.5em;
+  overflow: hidden;
+}
+.box1 span {
+  font-size: 0.3em;
+  clear: both;
+}
+.box2 {
+  background-color: #d3d3d3;
+  text-align: center;
+  font-size: 3em;
+  padding: 0.6em;
+  color: #808080;
+  line-height: 0.5em;
+  overflow: hidden;
+}
+.box2 span {
+  font-size: 0.3em;
+  clear: both;
+}
